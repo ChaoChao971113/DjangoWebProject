@@ -1,0 +1,18 @@
+{%  extends "base.html" %}
+
+{% block title %}
+    detail of {{object.transaction_id}}
+{% endblock title %}
+
+{% block content %}
+   {{object.pk}}
+    <br>
+    Transaction ID: {{ object.transaction_id }}
+    <br>
+    SalesMan: {{ object.salesman}}
+    <br>
+    Customer: {{ object.customers}}
+    <br>
+    {{ object}}
+{% endblock content %}
+
